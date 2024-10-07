@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
-  background: color #283db5;
+  background-color:#CE1141;
 }
 
 nav {
@@ -17,7 +17,7 @@ nav {
   padding: ;
   gap: 0.5rem;
   border-bottom: solid 1px #aaa;
-  background-color: #eee;
+  background-color: white;
 }
 
 nav a {
@@ -25,15 +25,15 @@ nav a {
   min-width: 9rem;
   padding: 1rem;
   border-radius: 0.2rem;
-  border: solid 1px #6db92e;
+  border: solid 1px #000;
   text-align: center;
   text-decoration: none;
-  color: #555;
+  color: ;
 }
 
 nav a[aria-current='page'] {
   color: #000;
-  background-color: #c91818;
+  background-color:#white;
 }
 
 main {
@@ -43,9 +43,18 @@ main {
 h1 {
   font-weight: bold;
   font-size: 2rem;
+  font-family: verdana 
 }
 p {
+  font-family: sans-serif
   font-size:3rem;
   word-spacing: 0.25rem;
-  font-style: italic;
+  font-style: ;
+}
+.container{
+  display:flex;
+  flex direction:column;
+  justify-content: space-evenly;
+  border:4px solid black; 
+  background-color:white;
 }
