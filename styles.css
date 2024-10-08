@@ -58,7 +58,7 @@ p {
 .container{
   display:flex;
   flex-direction:row;
-  justify-content: space-evenly;
+  justify-content: center;
   border:4px solid black; 
   background-color:white;
 }
@@ -72,5 +72,16 @@ p {
 width: 15px;
 height: 70px;
 font-size: 1rem;
-text-align: space-evenly;
+text-align: left;
+}
+#box1 {
+  text-align: center;
+}
+#box2{
+  text-align:right;
+}
+#FlexboxImage {
+  display:flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
