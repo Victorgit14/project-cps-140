@@ -80,8 +80,9 @@ text-align: left;
 #box2{
   text-align:right;
 }
-#FlexboxImage {
+#flexboximage{
   display:flex;
-  justify-content: center;
+  justify-content:center;
   margin-top: 2rem;
 }
+
