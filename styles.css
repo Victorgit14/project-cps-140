@@ -28,7 +28,7 @@ nav a{
   border: solid 1px #000;
   text-align: center;
   text-decoration: none;
-  color:
+  color:black
 }
 
 nav a[aria-current='page'] {
