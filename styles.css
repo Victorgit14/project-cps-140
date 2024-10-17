@@ -71,8 +71,13 @@ font-size: 1em;
 text-align: center;
 }
 
-.flexboximage{
-display: flex;
-justify-content: center;
-border: 10px solid blue
+#flexboximage {
+  display:flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+#flexboximage2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
