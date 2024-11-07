@@ -69,3 +69,35 @@ p {
   margin-left: auto;
   margin-right: auto;
   width: 10em;}
+
+.roundbox {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: white;
+  border-radius: 30px;
+  border: solid 2px #000;
+  height: 500px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 5%;
+
+
+}
+.picoval {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  height: 450px;
+  width: 400px;
+  margin-top:1.5%;
+  margin-bottom: 1.5%;
+}
+
+.trophy {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  height: 250px;
+  width: 400px;
+}
