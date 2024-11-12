@@ -95,18 +95,19 @@ p {
   margin-top:1.5%;
   margin-bottom: 1.5%;
 }
-
+.pic
 .trophy {
   width: 450px;
-  height: 150px;
+  height: 600px;
   border-radius: 20px;
-  height: 250px;
+  margin-left: 30px ;
+  
 }
 
 .suit {
   width: 450px;
-  height: 150px;
+  height: 600px;
   border-radius: 20px;
-  height: 250px;
+  margin-right: 30px;
  float: right;
 }
