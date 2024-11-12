@@ -85,6 +85,8 @@ p {
 
 }
 .picoval {
+  display:flex; 
+  flex-direction: row;
   width: 150px;
   height: 150px;
   border-radius: 20px;
@@ -95,9 +97,16 @@ p {
 }
 
 .trophy {
-  width: 150px;
+  width: 450px;
   height: 150px;
   border-radius: 20px;
   height: 250px;
-  width: 400px;
+}
+
+.suit {
+  width: 450px;
+  height: 150px;
+  border-radius: 20px;
+  height: 250px;
+ float: right;
 }
