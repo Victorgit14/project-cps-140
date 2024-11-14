@@ -57,6 +57,24 @@
     <img src="Images/in a suit.jpg" class="suit">
   </div>
   <p> Michael jordan has won 6 champioships and is one of the greatest players of all time</p>
+   <form class="form">
+        <label> 
+        Name: <input type="text" required />
+        </label>
+    
+        <label>
+          Message: <textarea style="width:80%"></textarea>
+        </label>
+        <label>
+          Opt in to Emails <input type="checkbox" />
+        </label>
+        <input type="submit" style="width:20%" onclick="formsubmission()" />
+      </form>
+      <script>
+        function formsubmission() {
+          alert (document.getElementById("title").textContent)
+        }
+      </script>
 
 </main>
 
@@ -65,3 +83,4 @@
 </footer>
 </body>
 </html>
+
