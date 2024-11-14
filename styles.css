@@ -108,20 +108,23 @@ text-align: center;
   margin-top:1.5%;
   margin-bottom: 1.5%;
 }
-.pic
+
 .trophy {
-  width: 450px;
+  display: flex;
+  width: 500px;
   height: 600px;
   border-radius: 20px;
-  margin-left: 30px ;
+  margin-left: 10px ;
+  float: left;
   
 }
 
 .suit {
-  width: 450px;
+  display: flex;
+  width: 500px;
   height: 600px;
   border-radius: 20px;
-  margin-right: 30px;
+  margin-right: 10px;
  float: right;
 }
 .form{
