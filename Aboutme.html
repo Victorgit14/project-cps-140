@@ -89,6 +89,28 @@
   })
 </script>
 
+<div>
+  <label> Dark mode
+    <input type="checkbox" onchange="toggleDarkMode()">
+  </label>
+  <script>
+    let isDarkMode= false;
+    const body= document.body
+
+    const toggleDarkMode = () => {
+      console.log("Using dark mode: "+isDarkMode);
+      isDarkMode=!isDarkMode
+      if (isDarkMode) {
+        body.style["backgroundColor"]="blue";
+        body.style["color"]="red";
+      } else {
+        body.style["backgroundColor"]="red"
+        body.style["color"]="blue";
+        
+      }
+    }
+  </script>
+</div>
 
 
 </body>
