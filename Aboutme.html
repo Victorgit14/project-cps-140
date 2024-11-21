@@ -60,7 +60,7 @@
 
 </div>
 <div id="dateBlock">
-
+<select id="type"></select>
 <table id="table">
   <thead>
     <tr>
@@ -79,11 +79,16 @@
 </table>
 
 <script>
-  const shoesType= ["all", "Michael", "Jordan"];
-  shoesType.forEach((shoe)=> {
-    console.log(shoe);
+  const shoesType= ["all", "Jordan 1", "Jordan 2"];
+  const select= document.getElementById("type");
+  shoesType.forEach((type) => {
+    option=document.createElement("option");
+    option.value = type;
+    option.text= type;
+    select.appendChild(option);
   })
 </script>
+
 
 
 </body>
