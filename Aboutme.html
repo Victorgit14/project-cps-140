@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <link rel="stylesheet" href="styles.css">
     <title> About me </title>
 
 
@@ -54,10 +55,72 @@
         }
       </script>
 
+      <script>
+        const shoes=[
+          {
+            name:""
+          }
+        ]
+      </script>
+
+
 
 
 </div>
 <div id="dateBlock">
+<select id="type"></select>
+<table id="table">
+  <thead>
+    <tr>
+      <td> <b> Name</b></td>
+      <td> <b> Year</b></td>
+      <td> <b> Number</b></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> Placeholder text</td>
+      <td> Placeholder text</td>
+      <td> Placeholder text</td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+  const shoesType= ["all", "Jordan 1", "Jordan 2"];
+  const select= document.getElementById("type");
+  shoesType.forEach((type) => {
+    option=document.createElement("option");
+    option.value = type;
+    option.text= type;
+    select.appendChild(option);
+  })
+</script>
+
+<div>
+  <label> Dark mode
+    <input type="checkbox" onchange="toggleDarkMode()">
+  </label>
+  <script>
+    let isDarkMode= false;
+    const body= document.body
+
+    const toggleDarkMode = () => {
+      console.log("Using dark mode: "+isDarkMode);
+      isDarkMode=!isDarkMode
+      if (isDarkMode) {
+        body.style["backgroundColor"]="blue";
+        body.style["color"]="red";
+      } else {
+        body.style["backgroundColor"]="red"
+        body.style["color"]="blue";
+
+      }
+    }
+  </script>
+</div>
+
+<div id="dateBlock"> </div>
 
 </body>
 
