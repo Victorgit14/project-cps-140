@@ -68,6 +68,8 @@
 
 </div>
 <div id="dateBlock">
+
+
 <select id="type"></select>
 <table id="table">
   <thead>
@@ -80,6 +82,8 @@
   <tbody> </tbody>
 </table>
  
+
+<select id="type" onchange="makeTable"></select>
 
 <script>
   const shoesType= ["all", "Jordan 1", "Jordan 2"];
@@ -106,17 +110,28 @@
   ]; 
 </script>
 <script>
-  const writeTableRow = (table, shoetable) => {
+  const writeTableRow = (table, shoe) => {
        const newRow = table.insertRow();
 
        newRow.innerHTML = `<tr id=${shoe.name}>
-           <td>${shoetable.Name}</td>
-           <td>${shoetable.Year}</td>
-           <td>${shoetable.Model}</td>
+           <td>${shoe.Name}</td>
+           <td>${shoe.Year}</td>
+           <td>${shoe.Model}</td>
        </tr>`;
    }
-   const tableBody = document.getElementsByTagName("tbody")[0];
-   writeTableRow(tableBody, shoe[1])
+   const makeTable = () => {
+    const table = document.getElementsByTagName ("tbody") [0];
+    table.innerHTML = "";
+    if (select.value =="all") {
+      shoe.forEach ((table) => {
+        writeTableRow(table),shoe);
+      }
+    }
+    shoe.forEach ((shoe) => {
+      writeTableRow (table, shoe);
+    })
+   }
+  makeTable()
 </script>
 
 <div>
