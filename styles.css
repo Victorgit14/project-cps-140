@@ -24,8 +24,8 @@ nav {
 nav a{
   
   display: inline-block;
-  min-width: 6rem;
-  padding: .5rem;
+  min-width: 15rem;
+  padding: 1rem;
   border-radius: 0.2rem;
   border: solid 1px #000;
   text-align: center;
