@@ -15,8 +15,8 @@ nav {
   background-color: white;
 }
 
-nav a{
-  
+nav a {
+
   display: inline-block;
   min-width: 15rem;
   padding: 1rem;
@@ -24,7 +24,7 @@ nav a{
   border: solid 1px #000;
   text-align: center;
   text-decoration: none;
-  color:black
+  color: black
 }
 
 nav a[aria-current='page'] {
@@ -38,27 +38,49 @@ main {
 h1 {
   font-weight: bold;
   font-size: 2rem;
-  font-family: verdana 
-}
-p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 3rem;
-  word-spacing: 0.25em;
- font-family: Verdana; 
+  font-family: verdana
 }
 
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  word-spacing: 0.25em;
+  font-family: Verdana;
+}
+.text-box {
+  border: 2px solid #000;      /* Adds a border around the box */
+  padding: 20px;               /* Adds space between the text and the border */
+  background-color: #f4f4f4;   /* Sets a background color */
+  width: 80%;                  /* Makes the box take up 80% of the width */
+  max-width: 800px;            /* Sets a maximum width */
+  margin: 20px auto;           /* Centers the box horizontally with margin */
+  border-radius: 30px;         /* Rounds the corners of the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow for effect */
+}
+
+
+a {
+  display: inline-block;
+}
+header {
+  text-align: center; 
+}
 
 
 .logocenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 1%;
   margin-top: 1%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 10em;}
+  width: 10em;
+}
 
 .roundbox {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   background-color: white;
@@ -71,15 +93,16 @@ p {
 
 
 }
+
 .picoval {
-  display:flex; 
+  display: flex;
   flex-direction: row;
   width: 150px;
   height: 150px;
   border-radius: 20px;
   height: 450px;
   width: 400px;
-  margin-top:1.5%;
+  margin-top: 1.5%;
   margin-bottom: 1.5%;
 }
 
@@ -88,9 +111,9 @@ p {
   width: 500px;
   height: 600px;
   border-radius: 20px;
-  margin-left: 10px ;
+  margin-left: 10px;
   float: left;
-  
+
 }
 
 .suit {
@@ -99,18 +122,20 @@ p {
   height: 600px;
   border-radius: 20px;
   margin-right: 10px;
- float: right;
+  float: right;
 }
-.form{
-  display:flex;
-  flex-direction:column;
+
+.form {
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
   padding: 1rem;
 }
 
 td {
-  padding:0.5rem;
+  padding: 0.5rem;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -122,39 +147,46 @@ body {
   background-color: #ce1141;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   justify-content: flex-start;
   min-height: 70rem;
 }
 
-.shoe-box {
-  width: 60%; 
-  max-width: 500px; 
-  margin-top: 70px; 
-  border: solid 1px #000;
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  background-color: white; 
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+.history, .impact {
+  margin-bottom: 40px;
 }
 
-.shoe-image {
-  max-width: 100%; 
-  height: auto;
+.shoe-box {
+  width: 60%;
+  max-width: 500px;
+  max-height: 350px;
+  margin-top: 70px;
+  border: solid 1px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
+
+  .shoe-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain; 
+  }
 
 .shoe-info {
   margin-top: 30px;
   text-align: center;
-  
+
 }
 
 .shoe-info h2 {
   font-size: 2rem;
   color: black;
-  
+
 }
 
 .shoe-info p {
@@ -166,7 +198,7 @@ body {
   font-size: 1.1rem;
   color: #777;
   margin-top: 10px;
-  
+
 }
 
 /* Additional Information Layout */
@@ -177,11 +209,13 @@ body {
   margin-top: 20px;
   width: 80%;
   max-width: 1200px;
-  
+
 }
 
 /* Box styling for Pros, Cons, and Description */
-.pros, .cons, .description-main {
+.pros,
+.cons,
+.description-main {
   background-color: white;
   padding: 20px;
   border-radius: 8px;
@@ -189,22 +223,29 @@ body {
 }
 
 /* Styling for the pros and cons box */
-.pros h3, .cons h3, .description-main h3 {
+.pros h3,
+.cons h3,
+.description-main h3 {
   font-size: 1.5rem;
   color: #333;
   margin-bottom: 10px;
 }
 
-.pros p, .cons p, .description-main p {
+.pros p,
+.cons p,
+.description-main p {
   font-size: 1rem;
   color: #555;
 }
 
 /* Flex properties for layout */
-.pros, .cons {
-  width: 28%; /* Smaller width for pros and cons */
+.pros,
+.cons {
+  width: 28%;
+  /* Smaller width for pros and cons */
 }
 
 .description-main {
-  width: 44%; /* Wider width for the main description */
+  width: 44%;
+  /* Wider width for the main description */
 }
